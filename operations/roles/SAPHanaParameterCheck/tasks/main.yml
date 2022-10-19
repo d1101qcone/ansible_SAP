@@ -1,0 +1,18 @@
+...
+- name: Install Python
+  raw: test -e /usr/bin/python
+
+- name: check HANA requirements
+  stat:
+    path: /root/ansible_SAP/operations/roles/SAPHanaParameterCheck/HANA_Parameter_202210_1  
+  register: stat_result
+
+- block:
+  - debug:
+     msg: "HANA Parameter file not found"
+  - meta: end_play
+  when: stat_result.stat.exists == false
+
+- name: excecute HANA Check
+  debug:
+      msg: "Executing HANA Parameter Check"
