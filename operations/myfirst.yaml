@@ -1,0 +1,12 @@
+- name: My first play
+  hosts: qcone
+  tasks:
+   - name: Ping my hosts
+     ansible.builtin.ping:
+   - name: Print message
+     ansible.builtin.debug:
+       msg: Hello world
+   - name: Return all secrets from a path
+     debug:
+      msg: "{{ lookup('hashi_vault', 'secret=secrets/QC-one/show/QSB/000 token=hvs.CAESIIc2ziOoXhC84mxFyuV4KMdHUGkOWCl6Bl727pAYL5D1Gh4KHGh2cy5xUDBKc2VLY2pEbzR1R0lyTDV4eHF4dEg url=http://192.168.50.30:8200')}}"
+
