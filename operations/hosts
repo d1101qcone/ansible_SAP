@@ -5,12 +5,12 @@ saphosts:
       ansible_user: bs4adm
       sid_no : 00
       sid    : BS4
-        
-    sdeqco161:
-      ansible_host: 192.168.60.161
-      ansible_user: qcsadm
-      sid_no : 00
-      sid    : QCS
+             
+      sdeqco161:
+       ansible_host: 192.168.60.161
+       ansible_user: qcsadm
+       sid_no : 00
+       sid    : QCS
 
 
 hanahosts:
