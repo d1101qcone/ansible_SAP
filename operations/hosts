@@ -22,7 +22,7 @@ hanahosts:
 
 SolutionManager:
   hosts:
-    qcs : 
+    sdeqco161 : 
       ansible_host: qcs.qc-one.net
       ansible_user: qcsadm
       sid_no : 00
