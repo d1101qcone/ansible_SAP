@@ -1,17 +1,11 @@
 saphosts:
   hosts:
-    sdeqco142:
-      ansible_host: sdeqco142.qc-one.net
-      ansible_user: qsbadm
-      sid_no : 00
-      sid    : QSB
-
-    sdeqco191:
+      sdeqco191:
       ansible_host: 192.168.60.191
       ansible_user: bs4adm
       sid_no : 00
       sid    : BS4
-    
+        
     sdeqco161:
       ansible_host: 192.168.60.161
       ansible_user: qcsadm
