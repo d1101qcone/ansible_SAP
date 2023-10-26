@@ -8,5 +8,5 @@
        msg: Hello world
    - name: Return all secrets from a path
      debug:
-      msg: "{{ lookup('hashi_vault', 'secret=secrets/QC-one/show/QSB/000 token=hvs.CAESIIc2ziOoXhC84mxFyuV4KMdHUGkOWCl6Bl727pAYL5D1Gh4KHGh2cy5xUDBKc2VLY2pEbzR1R0lyTDV4eHF4dEg url=http://192.168.50.30:8200')}}"
+      msg: "{{ lookup('hashi_vault', 'secret=secrets/QC-one/show/QSB/000 token=hvs.CAESIN7qKl2NKQXrAu8qdTLDClTGCsqCW86FeYmJ9Yb_jCn9Gh4KHGh2cy5ZdTVaT3ZYYklrYUVOM09IeEhha3luZEY url=http://192.168.50.30:8200')}}"
 
