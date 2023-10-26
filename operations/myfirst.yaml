@@ -7,5 +7,5 @@
      ansible.builtin.debug:
        msg: Hello world
    - name: Return all secrets from a path
-      msg: "{{ lookup('hashi_vault', 'secret=secrets/QC-one token=hvs.1yWlrPDUcBstmHEid25ieE5N url=http://192.168.50.30:8200')}}"
+     msg: "{{ lookup('hashi_vault', 'secret=secrets/QC-one token=hvs.1yWlrPDUcBstmHEid25ieE5N url=http://192.168.50.30:8200')}}"
 
