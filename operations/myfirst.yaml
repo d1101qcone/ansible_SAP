@@ -3,15 +3,18 @@
   tasks:
    - name: Ping my hosts
      ansible.builtin.ping:
+
    - name: Print message
      ansible.builtin.debug:
-       msg: Hello world
+        msg: Hello world
+
    - name: Read the latest version of a kv2 secret from Vault via the remote host with userpass auth
      community.hashi_vault.vault_kv2_get:
-       url: http://192.168.50.30:8200
-       token: hvs.1yWlrPDUcBstmHEid25ieE5N 
-       path: QC-one/SAP/QC1
+        url: http://192.168.50.30:8200
+        token: hvs.1yWlrPDUcBstmHEid25ieE5N 
+        path: QC-one/SAP/QC1
       register: response
+
     - name: Display the results
       ansible.builtin.debug:
         msg:
@@ -20,6 +23,7 @@
         - "Metadata: {{ response.metadata }}"
         - "Full response: {{ response.raw }}"
         - "Value of key 'password' in the secret: {{ response.secret.password }}"
+
   # equivalent API path is secret/data/hello
   # - name: Return all secrets from a path
   #   debug:
