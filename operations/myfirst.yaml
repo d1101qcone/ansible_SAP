@@ -14,7 +14,7 @@
         token: hvs.1yWlrPDUcBstmHEid25ieE5N 
         engine_mount_point: QC-one
         path: QSB/000/DDIC
-      register:  response
+      register: response
 
     - name: Display the results
       ansible.builtin.debug:
