@@ -12,7 +12,8 @@
      community.hashi_vault.vault_kv2_get:
         url: http://192.168.50.30:8200
         token: hvs.1yWlrPDUcBstmHEid25ieE5N 
-        path: QC-one
+        namespace: QC-one
+        path: QSB/000
       register: response
 
     - name: Display the results
