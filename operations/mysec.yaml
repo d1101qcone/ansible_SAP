@@ -3,4 +3,4 @@
   tasks:
    - name: Return all secrets from a path
      debug:
-      msg: "{{ lookup('hashi_vault', 'secret=secrets/QC-one/data/QSB token=hvs.1yWlrPDUcBstmHEid25ieE5N url=http://192.168.50.30:8200')}}"
+      msg: "{{ lookup('community.hashi_vault.hashi_vault', 'QC-one/data/Server token=hvs.1yWlrPDUcBstmHEid25ieE5N url=http://192.168.50.30:8200')}}"
